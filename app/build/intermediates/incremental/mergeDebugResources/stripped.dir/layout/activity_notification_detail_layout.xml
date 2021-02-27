@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" android:tag="layout/activity_notification_detail_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/primary_toolbar"
+            layout="@layout/toolbar_main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteLight">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/banner_ad_layout"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/notification_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_200dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:src="@color/placeholder"
+                    android:visibility="gone" />
+
+                <com.bestweby.enewz.customview.NeoSansProTextView
+                    android:id="@+id/notification_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/size_7dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="@string/text_placeholder"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_15sp"
+                    android:textStyle="bold" />
+
+                <com.bestweby.enewz.customview.RobotoTextView
+                    android:id="@+id/notification_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_10dp"
+                    android:layout_marginEnd="@dimen/size_10dp"
+                    android:layout_marginBottom="@dimen/size_7dp"
+                    android:text="@string/text_placeholder" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/view_post_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginStart="@dimen/size_7dp"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_marginEnd="@dimen/size_7dp"
+                    android:layout_marginBottom="@dimen/size_15dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/view_detail"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/view_url_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_40dp"
+                    android:layout_marginStart="@dimen/size_7dp"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:layout_marginEnd="@dimen/size_7dp"
+                    android:layout_marginBottom="@dimen/size_15dp"
+                    android:background="@color/colorAccent"
+                    android:backgroundTint="@color/colorAccent"
+                    android:text="@string/visit_url"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/banner_ad_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="bottom"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="@string/banner_ad_unit_id" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+         

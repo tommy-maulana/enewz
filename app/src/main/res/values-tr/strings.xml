@@ -1,0 +1,147 @@
+<resources>
+
+    <string name="app_name">ENEWZ</string>   <!--Replace with your app name -->
+    <string name="app_moto">Wordpress Sitesi için Haber Uygulaması</string>
+
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_news_template">Haber Şablonu</string>
+    <string name="nav_blog_template">Blog Şablonu</string>
+    <string name="nav_article_template">Makale Şablonu</string>
+    <string name="nav_story_template">Öykü Şablonu</string>
+    <string name="nav_feed_template">Besleme şablonu</string>
+    <string name="nav_categories">Kategoriler</string>
+    <string name="nav_category">Kategoriler</string>
+    <string name="nav_bookmarks">Yer imleri</string>
+    <string name="nav_terms_condition">Şartlar ve koşullar</string>
+    <string name="nav_privacy_policy">Gizlilik Politikası</string>
+    <string name="nav_faq">Sıkça Sorulan Sorular</string>
+    <string name="nav_support">Destek</string>
+    <string name="nav_social">Sosyal medya</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_others">Diğerleri</string>
+    <string name="nav_rate_app">Uygulamayı Oyla</string>
+    <string name="nav_settings">Ayarlar</string>
+    <string name="nav_more_apps">Daha fazla uygulama</string>
+
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">Adres</string>
+    <string name="toolbar_categories">Kategoriler</string>
+    <string name="toolbar_comments">Yorumlar</string>
+    <string name="toolbar_bookmarks">Yer imleri</string>
+    <string name="toolbar_notification">Bildirimler</string>
+    <string name="toolbar_notification_detail">Bildirim Ayrıntısı</string>
+    <string name="toolbar_settings">Ayarlar</string>
+
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">Aramak için bir şeyler yazın</string>
+    <string name="toolbar_filter">filtre</string>
+
+
+    <!-- Item Menu String -->
+    <string name="menu_share">Paylaş</string>
+    <string name="menu_save">Kayıt etmek</string>
+
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">Başarısız oldu</string>
+    <string name="comment_success_msg">Yorum Başarısı</string>
+    <string name="no_internet_msg">İnternet yok!</string>
+    <string name="connect_msg">Bağlamak</string>
+    <string name="server_failed_msg">Sunucu bağlantısı başarısız oldu</string>
+    <string name="no_data">Veri yok!</string>
+    <string name="no_bookmarks">Yer imi yok!</string>
+    <string name="no_notification">Bildirim Yok!</string>
+    <string name="login_msg">Lütfen önce giriş yapın</string>
+    <string name="logout_success">Çıkış yapıldı</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">Çıkış yapıldı</string>
+    <string name="pref_notification_summary">Bildirimi aç / kapat</string>
+    <string name="pref_text_title">Yazı Boyutu</string>
+    <string name="pref_text_size">Metin boyutunu seç</string>
+    <string name="pref_theme_title">Tema</string>
+    <string name="pref_theme_size">Tema seçin</string>
+    <string name="pref_language_dialog_title">Diller</string>
+    <string name="pref_language_title">Dil</string>
+    <string name="pref_language_summary">Ingilizce</string>
+    <string name="pref_rtl_title">Sağdan Sola Kullanıcı Arabirimi</string>
+    <string name="pref_rtl_summary">Sağdan sola Kullanıcı Arabirimini Etkinleştir / Devre Dışı Bırak</string>
+    <string name="pref_app_version_title">Uygulama sürümü</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_font_title">Oturumu Kapat</string>
+    <string name="pref_logout_summary">Beni buradan çıkış yap</string>
+
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">ışık</string>
+    <string name="theme_dark">karanlık</string>
+
+    <!-- App Text Settings -->
+    <string name="small_text">Küçük</string>
+    <string name="default_text">Normal</string>
+    <string name="large_text">Büyük</string>
+
+    <!-- App Language Settings -->
+    <string name="language_arabic">Arapça</string>
+    <string name="language_english">Ingilizce</string>
+    <string name="language_french">Fransızca</string>
+    <string name="language_german">Almanca</string>
+    <string name="language_spanish">İspanyol</string>
+    <string name="language_indonesian">Endonezya</string>
+    <string name="language_italian">İtalyan</string>
+    <string name="language_hindi">Hintçe</string>
+    <string name="language_turkish">Türk</string>
+    <string name="language_russian">Rusça</string>
+
+
+    <string name="please_sign_in">LÜTFEN ÜYE OLUN</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="sign_out">Oturumu Kapat</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="name">Isim</string>
+    <string name="email">E-posta</string>
+    <string name="email_cap">E-POSTA</string>
+    <string name="or">VEYA</string>
+    <string name="skip_login">ATLA</string>
+
+
+    <string name="share_text">En iyi haber uygulamasını şuradan yükle:</string>
+    <string name="install_messenger">Facebook messenger\'ı yükle</string>
+    <string name="permission_not_granted">İzin verilmemiştir!</string>
+
+
+    <string name="text_placeholder">Metin</string>
+    <string name="done">Tamam</string>
+    <string name="ok">Tamam</string>
+    <string name="login">Oturum aç</string>
+    <string name="cancel">İptal etmek</string>
+    <string name="submit">Sunmak</string>
+    <string name="posts">Gönderiler</string>
+    <string name="default_comments">0 Yorumlar</string>
+    <string name="comment">Yorum Yap</string>
+    <string name="comments">Yorumlar</string>
+    <string name="already_saved">Zaten Kayıtlı</string>
+    <string name="saved">kaydedilmiş</string>
+    <string name="view_detail">Ayrıntılara Bakın</string>
+    <string name="detail">detay</string>
+    <string name="mark_read">Okundu olarak işaretle</string>
+    <string name="delete">Sil</string>
+    <string name="close">Kapat</string>
+    <string name="visit_url">URL\'yi ziyaret et</string>
+    <string name="related_posts">İlgili Mesajlar</string>
+    <string name="view_comments">Yorumları Görüntüle</string>
+    <string name="full_name_empty_msg">Tam Adı Girin</string>
+    <string name="email_address_empty_msg">Email Adresini Gir</string>
+    <string name="comment_content_empty_msg">Yorum yapmak için bir şeyler yaz</string>
+    <string name="write_a_comment">Bir yorum Yaz</string>
+    <string name="select_action">Bir Eylem Seçin</string>
+
+</resources>

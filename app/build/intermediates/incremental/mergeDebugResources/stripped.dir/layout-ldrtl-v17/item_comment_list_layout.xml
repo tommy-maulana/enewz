@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorWhite" android:tag="layout-ldrtl/item_comment_list_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/size_3dp"
+            android:layout_marginBottom="@dimen/size_3dp"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatar_image"
+                android:layout_width="@dimen/size_60dp"
+                android:layout_height="@dimen/size_60dp"
+                android:layout_marginStart="@dimen/size_5dp"
+                android:padding="@dimen/size_5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_avatar_128"
+                app:civ_border_color="@color/grayLight"
+                app:civ_border_width="2dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/size_5dp"
+                android:layout_marginEnd="@dimen/size_5dp"
+                android:orientation="vertical">
+
+                <com.bestweby.enewz.customview.RobotoTextView
+                    android:id="@+id/comment_author_name"
+                    android:layout_width="match_parent"
+                    android:textDirection="rtl"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_3dp"
+                    android:layout_marginBottom="@dimen/size_3dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/text_placeholder"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_14sp"
+                    android:textStyle="bold" />
+
+                <com.bestweby.enewz.customview.RobotoTextView
+                    android:id="@+id/comment_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_5dp"
+                    android:text="@string/text_placeholder"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/text_11sp" />
+
+                <com.bestweby.enewz.customview.RobotoTextView
+                    android:id="@+id/comment_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="rtl"
+                    android:layout_marginBottom="@dimen/size_3dp"
+                    android:text="@string/text_placeholder"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_1dp"
+            android:layout_marginStart="@dimen/size_15dp"
+            android:layout_marginEnd="@dimen/size_15dp"
+            android:background="?android:attr/dividerHorizontal" />
+
+    </LinearLayout>
+
+         

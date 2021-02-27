@@ -1,0 +1,146 @@
+<resources>
+
+    <string name="app_name">ENEWZ</string>   <!--Replace with your app name -->
+    <string name="app_moto">Aplikasi Berita untuk Situs Wordpress</string>
+
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_news_template">Templat Berita</string>
+    <string name="nav_blog_template">Template Blog</string>
+    <string name="nav_article_template">Template Artikel</string>
+    <string name="nav_story_template">Template Cerita</string>
+    <string name="nav_feed_template">Template Feed</string>
+    <string name="nav_categories">Kategori</string>
+    <string name="nav_category">Kategori</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_terms_condition">Syarat dan Ketentuan</string>
+    <string name="nav_privacy_policy">Rahasia pribadi</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_support">Dukung</string>
+    <string name="nav_social">Media sosial</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_others">Lainnya</string>
+    <string name="nav_rate_app">Nilai Aplikasi</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="nav_more_apps">Aplikasi tambahan lainnya</string>
+
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">Alamat</string>
+    <string name="toolbar_categories">Kategori</string>
+    <string name="toolbar_comments">Komentar</string>
+    <string name="toolbar_bookmarks">Bookmarks</string>
+    <string name="toolbar_notification">Notifikasi</string>
+    <string name="toolbar_notification_detail">Detail Pemberitahuan</string>
+    <string name="toolbar_settings">Pengaturan</string>
+
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">Ketik Sesuatu untuk Dicari</string>
+    <string name="toolbar_filter">Saring</string>
+
+
+    <!-- Item Menu String -->
+    <string name="menu_share">Bagikan</string>
+    <string name="menu_save">Menyimpan</string>
+
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">Gagal</string>
+    <string name="comment_success_msg">Komentar Sukses</string>
+    <string name="no_internet_msg">Tidak ada internet!</string>
+    <string name="connect_msg">Menghubung</string>
+    <string name="server_failed_msg">Koneksi server gagal</string>
+    <string name="no_data">Tidak ada data!</string>
+    <string name="no_bookmarks">Tanpa Penanda!</string>
+    <string name="no_notification">Tidak ada pemberitahuan!</string>
+    <string name="login_msg">Silahkan masuk terlebih dahulu</string>
+    <string name="logout_success">Keluar</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">Pemberitahuan</string>
+    <string name="pref_notification_summary">Nyalakan / matikan notifikasi</string>
+    <string name="pref_text_title">Ukuran teks</string>
+    <string name="pref_text_size">Pilih ukuran teks</string>
+    <string name="pref_theme_title">Tema</string>
+    <string name="pref_theme_size">Pilih tema</string>
+    <string name="pref_language_dialog_title">Bahasa</string>
+    <string name="pref_language_title">Bahasa</string>
+    <string name="pref_language_summary">Inggris</string>
+    <string name="pref_rtl_title">UI Kanan ke Kiri</string>
+    <string name="pref_rtl_summary">Aktifkan / Nonaktifkan UI kanan ke kiri</string>
+    <string name="pref_app_version_title">Versi aplikasi</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_font_title">Keluar</string>
+    <string name="pref_logout_summary">Keluarkan aku dari sini</string>
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- App Text Settings -->
+    <string name="small_text">Kecil</string>
+    <string name="default_text">Normal</string>
+    <string name="large_text">Besar</string>
+
+    <!-- App Language Settings -->
+    <string name="language_arabic">Arab</string>
+    <string name="language_english">Inggris</string>
+    <string name="language_french">Perancis</string>
+    <string name="language_german">Jerman</string>
+    <string name="language_spanish">Spanyol</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_italian">Italia</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_turkish">Turki</string>
+    <string name="language_russian">Rusia</string>
+
+
+    <string name="please_sign_in">HARAP MENDAFTAR DENGAN</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="sign_out">Keluar</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="name">Nama</string>
+    <string name="email">Surel</string>
+    <string name="email_cap">Surel</string>
+    <string name="or">ATAU</string>
+    <string name="skip_login">MELEWATKAN</string>
+
+
+    <string name="share_text">Instal aplikasi berita terbaik dari:</string>
+    <string name="install_messenger">Instal facebook messenger</string>
+    <string name="permission_not_granted">Izin tidak diberikan!</string>
+
+
+    <string name="text_placeholder">Teks</string>
+    <string name="done">Selesai</string>
+    <string name="ok">baik</string>
+    <string name="login">Gabung</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="submit">Kirimkan</string>
+    <string name="posts">Posting</string>
+    <string name="default_comments">0 Komentar</string>
+    <string name="comment">Komentar</string>
+    <string name="comments">Komentar</string>
+    <string name="already_saved">Sudah Disimpan</string>
+    <string name="saved">Disimpan</string>
+    <string name="view_detail">Lihat Detail</string>
+    <string name="detail">Detail</string>
+    <string name="mark_read">Tandai sebagai membaca</string>
+    <string name="delete">Menghapus</string>
+    <string name="close">Menutup</string>
+    <string name="visit_url">Kunjungi URL</string>
+    <string name="related_posts">Posting Terkait</string>
+    <string name="view_comments">Lihat Komentar</string>
+    <string name="full_name_empty_msg">Masukkan Nama Lengkap</string>
+    <string name="email_address_empty_msg">Masukkan alamat email</string>
+    <string name="comment_content_empty_msg">Tulis sesuatu untuk dikomentari</string>
+    <string name="write_a_comment">Tulis komen</string>
+    <string name="select_action">Pilih suatu Tindakan</string>
+
+</resources>

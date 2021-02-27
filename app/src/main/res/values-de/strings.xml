@@ -1,0 +1,147 @@
+<resources>
+
+    <string name="app_name">ENEWZ</string>   <!--Replace with your app name -->
+    <string name="app_moto">Nachrichten App für Wordpress Site</string>
+
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_news_template">Nachrichten Vorlage</string>
+    <string name="nav_blog_template">Blog Vorlage</string>
+    <string name="nav_article_template">Artikel Vorlage</string>
+    <string name="nav_story_template">Story Vorlage</string>
+    <string name="nav_feed_template">Feed Vorlage</string>
+    <string name="nav_categories">Kategorien</string>
+    <string name="nav_category">Kategorien</string>
+    <string name="nav_bookmarks">Lesezeichen</string>
+    <string name="nav_terms_condition">Geschäftsbedingung</string>
+    <string name="nav_privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="nav_faq">FAQ Häufig gestellte Fragen</string>
+    <string name="nav_support">Unterstützung</string>
+    <string name="nav_social">Sozial</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_others">Andere</string>
+    <string name="nav_rate_app">Bewertungs App</string>
+    <string name="nav_settings">die Einstellungen</string>
+    <string name="nav_more_apps">Mehr Apps</string>
+
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">Adresse</string>
+    <string name="toolbar_categories">Kategorien</string>
+    <string name="toolbar_comments">Bemerkungen</string>
+    <string name="toolbar_bookmarks">Lesezeichen</string>
+    <string name="toolbar_notification">Benachrichtigungen</string>
+    <string name="toolbar_notification_detail">Benachrichtigungsdetail</string>
+    <string name="toolbar_settings">die Einstellungen</string>
+
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">Geben Sie etwas zum Suchen ein</string>
+    <string name="toolbar_filter">Filter</string>
+
+
+    <!-- Item Menu String -->
+    <string name="menu_share">Aktie</string>
+    <string name="menu_save">sparen</string>
+
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">Gescheitert</string>
+    <string name="comment_success_msg">Kommentar Erfolg</string>
+    <string name="no_internet_msg">Kein Internet!</string>
+    <string name="connect_msg">Verbinden</string>
+    <string name="server_failed_msg">Serververbindung fehlgeschlagen</string>
+    <string name="no_data">Keine Daten!</string>
+    <string name="no_bookmarks">Keine Lesezeichen!</string>
+    <string name="no_notification">Keine Benachrichtigungen!</string>
+    <string name="login_msg">Bitte loggen Sie sich zuerst ein</string>
+    <string name="logout_success">Abgemeldet</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">Benachrichtigung</string>
+    <string name="pref_notification_summary">Benachrichtigung ein- / ausschalten</string>
+    <string name="pref_text_title">Textgröße</string>
+    <string name="pref_text_size">Wählen Sie die Textgröße</string>
+    <string name="pref_theme_title">Thema</string>
+    <string name="pref_theme_size">Thema wählen</string>
+    <string name="pref_language_dialog_title">Sprachen</string>
+    <string name="pref_language_title">Sprache</string>
+    <string name="pref_language_summary">Englisch</string>
+    <string name="pref_rtl_title">Benutzeroberfläche von rechts nach links</string>
+    <string name="pref_rtl_summary">Aktivieren / Deaktivieren der Benutzeroberfläche von rechts nach links</string>
+    <string name="pref_app_version_title">App version</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_font_title">Ausloggen</string>
+    <string name="pref_logout_summary">Melde mich hier ab</string>
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">Licht</string>
+    <string name="theme_dark">Dunkel</string>
+
+
+    <!-- App Text Settings -->
+    <string name="small_text">Klein</string>
+    <string name="default_text">normalisiert</string>
+    <string name="large_text">Groß</string>
+
+    <!-- App Language Settings -->
+    <string name="language_arabic">Arabisch</string>
+    <string name="language_english">Englisch</string>
+    <string name="language_french">Französisch</string>
+    <string name="language_german">Deutsche</string>
+    <string name="language_spanish">Spanisch</string>
+    <string name="language_indonesian">Indonesisch</string>
+    <string name="language_italian">Italienisch</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_turkish">Türkisch</string>
+    <string name="language_russian">Russisch</string>
+
+
+    <string name="please_sign_in">BITTE ANMELDEN MIT</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="sign_out">Ausloggen</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="email_cap">EMAIL</string>
+    <string name="or">ODER</string>
+    <string name="skip_login">ÜBERSPRINGEN</string>
+
+
+    <string name="share_text">Installieren Sie die beste Nachrichtenanwendung von:</string>
+    <string name="install_messenger">Installieren Sie den Facebook Messenger</string>
+    <string name="permission_not_granted">Erlaubnis nicht erteilt!</string>
+
+
+    <string name="text_placeholder">Text</string>
+    <string name="done">Erledigt</string>
+    <string name="ok">OK</string>
+    <string name="login">Anmeldung</string>
+    <string name="cancel">Stornieren</string>
+    <string name="submit">einreichen</string>
+    <string name="posts">Beiträge</string>
+    <string name="default_comments">0 Kommentare</string>
+    <string name="comment">Kommentar</string>
+    <string name="comments">Kommentare</string>
+    <string name="already_saved">Bereits gespeichert</string>
+    <string name="saved">Gerettet</string>
+    <string name="view_detail">Im Detail sehen</string>
+    <string name="detail">Detail</string>
+    <string name="mark_read">Als gelesen markieren</string>
+    <string name="delete">Löschen</string>
+    <string name="close">Schließen</string>
+    <string name="visit_url">URL besuchen</string>
+    <string name="related_posts">zusammenhängende Posts</string>
+    <string name="view_comments">Kommentare ansehen</string>
+    <string name="full_name_empty_msg">Geben Sie den vollständigen Namen ein</string>
+    <string name="email_address_empty_msg">E-Mail Adresse eingeben</string>
+    <string name="comment_content_empty_msg">Schreiben Sie etwas zu kommentieren</string>
+    <string name="write_a_comment">Schreibe einen Kommentar</string>
+    <string name="select_action">Wählen Sie eine Aktion aus</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<resources>
+
+    <string name="app_name">ENEWZ</string>   <!--Replace with your app name -->
+    <string name="app_moto">تطبيق أخبار لموقع وورد</string>
+
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_news_template">قالب الأخبار</string>
+    <string name="nav_blog_template">قالب المدونة</string>
+    <string name="nav_article_template">قالب المادة</string>
+    <string name="nav_story_template">قالب القصة</string>
+    <string name="nav_feed_template">قالب تغذية</string>
+    <string name="nav_categories">الاقسام</string>
+    <string name="nav_category">الاقسام</string>
+    <string name="nav_bookmarks">إرسال</string>
+    <string name="nav_terms_condition">أحكام وشروط</string>
+    <string name="nav_privacy_policy">سياسة خاصة</string>
+    <string name="nav_faq">أسئلة وأجوبة المتداولة</string>
+    <string name="nav_support">الدعم</string>
+    <string name="nav_social">اجتماعي</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_others">الآخرين</string>
+    <string name="nav_rate_app">معدل التطبيق</string>
+    <string name="nav_settings">الإعدادات</string>
+    <string name="nav_more_apps">تطبيقات أكثر</string>
+
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">عنوان</string>
+    <string name="toolbar_categories">الاقسام</string>
+    <string name="toolbar_comments">تعليقات</string>
+    <string name="toolbar_bookmarks">إرسال</string>
+    <string name="toolbar_notification">إخطارات</string>
+    <string name="toolbar_notification_detail">تفاصيل الإخطار</string>
+    <string name="toolbar_settings">الإعدادات</string>
+
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">اكتب شيئا للبحث</string>
+    <string name="toolbar_filter">منقي</string>
+
+    <!-- Item Menu String -->
+    <string name="menu_share">شارك</string>
+    <string name="menu_save">حفظ</string>
+
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">فشل</string>
+    <string name="comment_success_msg">تعليق النجاح</string>
+    <string name="no_internet_msg">لا انترنت!</string>
+    <string name="connect_msg">الاتصال</string>
+    <string name="server_failed_msg">فشل اتصال الخادم</string>
+    <string name="no_data">لايوجد بيانات!</string>
+    <string name="no_bookmarks">لا توجد إشارات مرجعية!</string>
+    <string name="no_notification">لا إشعارات!</string>
+    <string name="login_msg">الرجاء تسجيل الدخول أولا</string>
+    <string name="logout_success">تسجيل الخروج</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">إعلام</string>
+    <string name="pref_notification_summary">تشغيل / إيقاف الإعلام</string>
+    <string name="pref_text_title">حجم الخط</string>
+    <string name="pref_text_size">حدد حجم النص</string>
+    <string name="pref_theme_title">موضوع</string>
+    <string name="pref_theme_size">اختر نمطا</string>
+    <string name="pref_language_dialog_title">اللغات</string>
+    <string name="pref_language_title">لغة</string>
+    <string name="pref_language_summary">الإنجليزية</string>
+    <string name="pref_rtl_title">من اليمين إلى اليسار واجهة المستخدم</string>
+    <string name="pref_rtl_summary">تمكين / تعطيل اليمين إلى اليسار واجهة المستخدم</string>
+    <string name="pref_app_version_title">نسخة التطبيق</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_font_title">خروج</string>
+    <string name="pref_logout_summary">أخرجني من هنا</string>
+
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">ضوء</string>
+    <string name="theme_dark">داكن</string>
+
+
+    <!-- App Text Settings -->
+    <string name="small_text">صغير</string>
+    <string name="default_text">عادي</string>
+    <string name="large_text">كبير</string>
+
+
+    <!-- App Language Settings -->
+    <string name="language_arabic">عربى</string>
+    <string name="language_english">الإنجليزية</string>
+    <string name="language_french">الفرنسية</string>
+    <string name="language_german">ألمانية</string>
+    <string name="language_spanish">الأسبانية</string>
+    <string name="language_indonesian">الأندونيسية</string>
+    <string name="language_italian">الإيطالي</string>
+    <string name="language_hindi">الهندية</string>
+    <string name="language_turkish">اللغة التركية</string>
+    <string name="language_russian">الروسية</string>
+
+
+    <string name="please_sign_in">يرجى التوقيع مع</string>
+    <string name="facebook_cap">فيس بوك</string>
+    <string name="sign_out">خروج</string>
+    <string name="google_cap">جوجل</string>
+    <string name="name">اسم</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="email_cap">البريد الإلكتروني</string>
+    <string name="or">أو</string>
+    <string name="skip_login">تخطى</string>
+
+
+    <string name="share_text">تثبيت أفضل تطبيق تسوق من:</string>
+    <string name="install_messenger">تثبيت الفيسبوك رسول</string>
+    <string name="permission_not_granted">إذن لم يمنح!</string>
+
+
+    <string name="text_placeholder">نص</string>
+    <string name="done">فعله</string>
+    <string name="ok">حسنا</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="cancel">إلغاء</string>
+    <string name="submit">خضع</string>
+    <string name="posts">المشاركات</string>
+    <string name="default_comments">0 تعليق</string>
+    <string name="comment">تعليق</string>
+    <string name="comments">تعليق</string>
+    <string name="already_saved">تم الحفظ بالفعل</string>
+    <string name="saved">تم الحفظ</string>
+    <string name="view_detail">عرض التفاصيل</string>
+    <string name="detail">التفاصيل</string>
+    <string name="mark_read">ضع إشارة مقروء</string>
+    <string name="delete">حذف</string>
+    <string name="close">قريب</string>
+    <string name="visit_url">زيارة URL</string>
+    <string name="related_posts">الوظائف ذات الصلة</string>
+    <string name="view_comments">تعليقات عرض</string>
+    <string name="full_name_empty_msg">أدخل الاسم الكامل</string>
+    <string name="email_address_empty_msg">أدخل عنوان البريد الالكتروني</string>
+    <string name="comment_content_empty_msg">اكتب شيئا للتعليق</string>
+    <string name="write_a_comment">أكتب تعليقا</string>
+    <string name="select_action">حدد إجراء</string>
+
+</resources>

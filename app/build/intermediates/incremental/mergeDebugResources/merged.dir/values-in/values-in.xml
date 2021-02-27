@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"Tunjukkan jalan ke rumah"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"Kembali ke atas"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"Opsi lain"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"Selesai"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"Lihat semua"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"Pilih aplikasi"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"NONAKTIF"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"AKTIF"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"spasi"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"Telusuri..."</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"Hapus kueri"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"Telusuri kueri"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"Telusuri"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"Kirim kueri"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"Penelusuran suara"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"Bagikan dengan"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"Bagikan dengan <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"Ciutkan"</string>
+    <string name="already_saved">Sudah Disimpan</string>
+    <string name="app_moto">Aplikasi Berita untuk Situs Wordpress</string>
+    <string name="app_name">ENEWZ</string>
+    <string name="cancel">Membatalkan</string>
+    <string name="close">Menutup</string>
+    <string name="comment">Komentar</string>
+    <string name="comment_content_empty_msg">Tulis sesuatu untuk dikomentari</string>
+    <string name="comment_success_msg">Komentar Sukses</string>
+    <string name="comments">Komentar</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"Aktifkan"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berfungsi jika layanan Google Play tidak diaktifkan."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Aktifkan layanan Google Play"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"Instal"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang tidak ada di perangkat Anda."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Dapatkan layanan Google Play"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Ketersediaan layanan Google Play"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Kesalahan layanan Google Play"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> mengalami masalah dengan layanan Google Play. Coba lagi."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang tidak didukung oleh perangkat Anda."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"Update"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan jika layanan Google Play tidak diperbarui."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Perbarui layanan Google Play"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> tidak akan berjalan tanpa layanan Google Play, yang saat ini sedang diperbarui."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Perlu versi baru layanan Google Play. Akan segera memperbarui sendiri."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"Buka di ponsel"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"Login"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Login dengan Google"</string>
+    <string name="connect_msg">Menghubung</string>
+    <string msgid="3209159573327985035" name="copy">"Salin"</string>
+    <string name="default_comments">0 Komentar</string>
+    <string name="default_text">Normal</string>
+    <string name="delete">Menghapus</string>
+    <string name="detail">Detail</string>
+    <string name="done">Selesai</string>
+    <string name="email">Surel</string>
+    <string name="email_address_empty_msg">Masukkan alamat email</string>
+    <string name="email_cap">Surel</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"Lanjutan"</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="failed_msg">Gagal</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"Lain-Lain"</string>
+    <string name="full_name_empty_msg">Masukkan Nama Lengkap</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="install_messenger">Instal facebook messenger</string>
+    <string name="language_arabic">Arab</string>
+    <string name="language_english">Inggris</string>
+    <string name="language_french">Perancis</string>
+    <string name="language_german">Jerman</string>
+    <string name="language_hindi">Hindi</string>
+    <string name="language_indonesian">Bahasa Indonesia</string>
+    <string name="language_italian">Italia</string>
+    <string name="language_russian">Rusia</string>
+    <string name="language_spanish">Spanyol</string>
+    <string name="language_turkish">Turki</string>
+    <string name="large_text">Besar</string>
+    <string name="login">Gabung</string>
+    <string name="login_msg">Silahkan masuk terlebih dahulu</string>
+    <string name="logout_success">Keluar</string>
+    <string name="mark_read">Tandai sebagai membaca</string>
+    <string name="menu_save">Menyimpan</string>
+    <string name="menu_share">Bagikan</string>
+    <string name="name">Nama</string>
+    <string name="nav_article_template">Template Artikel</string>
+    <string name="nav_blog_template">Template Blog</string>
+    <string name="nav_bookmarks">Bookmarks</string>
+    <string name="nav_categories">Kategori</string>
+    <string name="nav_category">Kategori</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_faq">FAQ</string>
+    <string name="nav_feed_template">Template Feed</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_more_apps">Aplikasi tambahan lainnya</string>
+    <string name="nav_news_template">Templat Berita</string>
+    <string name="nav_others">Lainnya</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_privacy_policy">Rahasia pribadi</string>
+    <string name="nav_rate_app">Nilai Aplikasi</string>
+    <string name="nav_settings">Pengaturan</string>
+    <string name="nav_social">Media sosial</string>
+    <string name="nav_story_template">Template Cerita</string>
+    <string name="nav_support">Dukung</string>
+    <string name="nav_terms_condition">Syarat dan Ketentuan</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="no_bookmarks">Tanpa Penanda!</string>
+    <string name="no_data">Tidak ada data!</string>
+    <string name="no_internet_msg">Tidak ada internet!</string>
+    <string name="no_notification">Tidak ada pemberitahuan!</string>
+    <string msgid="478774118347071097" name="not_set">"Belum disetel"</string>
+    <string name="ok">baik</string>
+    <string name="or">ATAU</string>
+    <string name="permission_not_granted">Izin tidak diberikan!</string>
+    <string name="please_sign_in">HARAP MENDAFTAR DENGAN</string>
+    <string name="posts">Posting</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_app_version_title">Versi aplikasi</string>
+    <string name="pref_font_title">Keluar</string>
+    <string name="pref_language_dialog_title">Bahasa</string>
+    <string name="pref_language_summary">Inggris</string>
+    <string name="pref_language_title">Bahasa</string>
+    <string name="pref_logout_summary">Keluarkan aku dari sini</string>
+    <string name="pref_notification_summary">Nyalakan / matikan notifikasi</string>
+    <string name="pref_notification_title">Pemberitahuan</string>
+    <string name="pref_rtl_summary">Aktifkan / Nonaktifkan UI kanan ke kiri</string>
+    <string name="pref_rtl_title">UI Kanan ke Kiri</string>
+    <string name="pref_text_size">Pilih ukuran teks</string>
+    <string name="pref_text_title">Ukuran teks</string>
+    <string name="pref_theme_size">Pilih tema</string>
+    <string name="pref_theme_title">Tema</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" disalin ke papan klip."</string>
+    <string name="related_posts">Posting Terkait</string>
+    <string msgid="368094699078615544" name="s1">"Simpan gambar"</string>
+    <string msgid="4550830452390689489" name="s2">"Izinkan Iklan menyimpan gambar di Galeri foto?"</string>
+    <string msgid="2435407834265420668" name="s3">"Terima"</string>
+    <string msgid="9167523597401839819" name="s4">"Tolak"</string>
+    <string msgid="1566682516266724847" name="s5">"Buat acara kalender"</string>
+    <string msgid="5996672174517137271" name="s6">"Izinkan Iklan membuat acara kalender?"</string>
+    <string msgid="7163549807207034258" name="s7">"Tes Iklan"</string>
+    <string name="saved">Disimpan</string>
+    <string msgid="730395136688082741" name="search_menu_title">"Telusuri"</string>
+    <string name="select_action">Pilih suatu Tindakan</string>
+    <string name="server_failed_msg">Koneksi server gagal</string>
+    <string name="share_text">Instal aplikasi berita terbaik dari:</string>
+    <string name="sign_out">Keluar</string>
+    <string name="skip_login">MELEWATKAN</string>
+    <string name="small_text">Kecil</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit">Kirimkan</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="text_placeholder">Teks</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="toolbar_address">Alamat</string>
+    <string name="toolbar_bookmarks">Bookmarks</string>
+    <string name="toolbar_categories">Kategori</string>
+    <string name="toolbar_comments">Komentar</string>
+    <string name="toolbar_filter">Saring</string>
+    <string name="toolbar_notification">Notifikasi</string>
+    <string name="toolbar_notification_detail">Detail Pemberitahuan</string>
+    <string name="toolbar_search">Ketik Sesuatu untuk Dicari</string>
+    <string name="toolbar_settings">Pengaturan</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"NONAKTIF"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"AKTIF"</string>
+    <string name="view_comments">Lihat Komentar</string>
+    <string name="view_detail">Lihat Detail</string>
+    <string name="visit_url">Kunjungi URL</string>
+    <string name="write_a_comment">Tulis komen</string>
+</resources>

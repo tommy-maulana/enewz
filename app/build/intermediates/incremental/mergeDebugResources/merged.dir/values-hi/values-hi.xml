@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="7903180715631665059" name="abc_action_bar_home_description">"होम पेज पर जाएं"</string>
+    <string msgid="6794660482873516081" name="abc_action_bar_up_description">"वापस जाएं"</string>
+    <string msgid="1155814932213556626" name="abc_action_menu_overflow_description">"ज़्यादा विकल्प"</string>
+    <string msgid="2571498368472823490" name="abc_action_mode_done">"हो गया"</string>
+    <string msgid="3732416590524162402" name="abc_activity_chooser_view_see_all">"सभी देखें"</string>
+    <string msgid="1798588241954930982" name="abc_activitychooserview_choose_application">"कोई ऐप्लिकेशन चुनें"</string>
+    <string msgid="3403923230105792483" name="abc_capital_off">"बंद"</string>
+    <string msgid="7831734969929204599" name="abc_capital_on">"चालू"</string>
+    <string msgid="5725160506500770567" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="944415252197684443" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="129742188101734366" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="6840127756824236027" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="4974283687810130415" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="8046416353848716905" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="3271697756921353410" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="2304645930658438191" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="8327365089695024394" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="3570106412128999382" name="abc_prepend_shortcut_label">"Menu+"</string>
+    <string msgid="940844115270746197" name="abc_search_hint">"खोजें…"</string>
+    <string msgid="1769270744562318534" name="abc_searchview_description_clear">"क्‍वेरी हटाएं"</string>
+    <string msgid="908784302972860853" name="abc_searchview_description_query">"सर्च क्वेरी"</string>
+    <string msgid="5466662225065974044" name="abc_searchview_description_search">"खोजें"</string>
+    <string msgid="8203855622131699655" name="abc_searchview_description_submit">"क्वेरी सबमिट करें"</string>
+    <string msgid="3478748990613108725" name="abc_searchview_description_voice">"बोलकर खोजें"</string>
+    <string msgid="2650565705514630347" name="abc_shareactionprovider_share_with">"इससे शेयर करें:"</string>
+    <string msgid="9009661856846212431" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> से शेयर करें"</string>
+    <string msgid="6389460216547290468" name="abc_toolbar_collapse_description">"छोटा करें"</string>
+    <string name="already_saved">पहले से ही बचा हुआ</string>
+    <string name="app_moto">वर्डप्रेस साइट के लिए समाचार ऐप</string>
+    <string name="app_name">ENEWZ</string>
+    <string name="cancel">रद्द करना</string>
+    <string name="close">बंद करे</string>
+    <string name="comment">टिप्पणी</string>
+    <string name="comment_content_empty_msg">टिप्पणी करने के लिए कुछ लिखें</string>
+    <string name="comment_success_msg">टिप्पणी सफलता</string>
+    <string name="comments">टिप्पणियाँ</string>
+    <string msgid="8585111718777012708" name="common_google_play_services_enable_button">"चालू करें"</string>
+    <string msgid="7045129128108380659" name="common_google_play_services_enable_text">"जब तक आप Google Play सेवाएं चालू नहीं करते, <ns1:g id="APP_NAME">%1$s</ns1:g> काम नहीं करेगा."</string>
+    <string msgid="3147157405986503375" name="common_google_play_services_enable_title">"Google Play सेवाएं चालू करें"</string>
+    <string msgid="9115728400623041681" name="common_google_play_services_install_button">"इंस्टॉल करें"</string>
+    <string msgid="8179894293032530091" name="common_google_play_services_install_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा जो आपके डिवाइस में उपलब्ध नहीं हैं."</string>
+    <string msgid="7442193194585196676" name="common_google_play_services_install_title">"Google Play सेवाएं इंस्टॉल करें"</string>
+    <string msgid="4293541511340436975" name="common_google_play_services_notification_channel_name">"Google Play सेवाएं उपलब्ध हैं"</string>
+    <string msgid="180394615667698242" name="common_google_play_services_notification_ticker">"Google Play सेवाओं से जुड़ी गड़बड़ी"</string>
+    <string msgid="2518680582564677258" name="common_google_play_services_unknown_issue">"<ns1:g id="APP_NAME">%1$s</ns1:g> को Google Play सेवाओं के साथ समस्या आ रही है. कृपया फिर से कोशिश करें."</string>
+    <string msgid="5501187292256987189" name="common_google_play_services_unsupported_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा, जो आपके डिवाइस पर काम नहीं करती हैं."</string>
+    <string msgid="8172070149091615356" name="common_google_play_services_update_button">"अपडेट करें"</string>
+    <string msgid="7773943415006962566" name="common_google_play_services_update_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> तब तक नहीं चलेगा जब तक आप Google Play सेवाओं को अपडेट नहीं करते."</string>
+    <string msgid="8706675115216073244" name="common_google_play_services_update_title">"Google Play सेवाओं को अपडेट करें"</string>
+    <string msgid="7894275749778928941" name="common_google_play_services_updating_text">"<ns1:g id="APP_NAME">%1$s</ns1:g> उन Google Play सेवाओं के बिना नहीं चलेगा जो अभी अपडेट हो रही हैं."</string>
+    <string msgid="2804989272736383918" name="common_google_play_services_wear_update_text">"Google Play सेवाओं के नए वर्शन की ज़रूरत है. यह जल्द ही अपने आप अपडेट हो जाएगा."</string>
+    <string msgid="5201977337835724196" name="common_open_on_phone">"फ़ोन पर खोलें"</string>
+    <string msgid="3441753203274453993" name="common_signin_button_text">"साइन इन करें"</string>
+    <string msgid="669893613918351210" name="common_signin_button_text_long">"Google के ज़रिए साइन इन करें"</string>
+    <string name="connect_msg">जुडिये</string>
+    <string msgid="3209159573327985035" name="copy">"कॉपी करें"</string>
+    <string name="default_comments">0 टिप्पणियाँ</string>
+    <string name="default_text">Normal</string>
+    <string name="delete">हटाएं</string>
+    <string name="detail">विस्तार</string>
+    <string name="done">किया हुआ</string>
+    <string name="email">ईमेल</string>
+    <string name="email_address_empty_msg">ईमेल पता दर्ज</string>
+    <string name="email_cap">ईमेल</string>
+    <string msgid="1234962710353108940" name="expand_button_title">"बेहतर सेटिंग"</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="failed_msg">अनुत्तीर्ण होना</string>
+    <string msgid="4133737464567140336" name="fcm_fallback_notification_channel_label">"अन्य"</string>
+    <string name="full_name_empty_msg">पूरा नाम दर्ज करें</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="install_messenger">फेसबुक मैसेंजर स्थापित करें</string>
+    <string name="language_arabic">अरबी</string>
+    <string name="language_english">अंग्रेज़ी</string>
+    <string name="language_french">फ्रेंच</string>
+    <string name="language_german">जर्मन</string>
+    <string name="language_hindi">हिंदी</string>
+    <string name="language_indonesian">इन्डोनेशियाई</string>
+    <string name="language_italian">इतालवी</string>
+    <string name="language_russian">रूसी</string>
+    <string name="language_spanish">स्पेनिश</string>
+    <string name="language_turkish">तुर्की</string>
+    <string name="large_text">Large</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="login_msg">पहले प्रवेश करें</string>
+    <string name="logout_success">बाहर आ गये</string>
+    <string name="mark_read">पढ़े हुए का चिह्न</string>
+    <string name="menu_save">सहेजें</string>
+    <string name="menu_share">शेयर</string>
+    <string name="name">नाम</string>
+    <string name="nav_article_template">लेख टेम्पलेट</string>
+    <string name="nav_blog_template">ब्लॉग टेम्पलेट</string>
+    <string name="nav_bookmarks">बुकमार्क</string>
+    <string name="nav_categories">श्रेणियाँ</string>
+    <string name="nav_category">श्रेणियाँ</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_faq">सामान्य प्रश्न</string>
+    <string name="nav_feed_template">फ़ीड टेम्पलेट</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_more_apps">और ऐप</string>
+    <string name="nav_news_template">समाचार टेम्पलेट</string>
+    <string name="nav_others">अन्य</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_privacy_policy">गोपनीयता नीति</string>
+    <string name="nav_rate_app">एप्लिकेशन का मूल्यांकन करें</string>
+    <string name="nav_settings">समायोजन</string>
+    <string name="nav_social">सामाजिक मीडिया</string>
+    <string name="nav_story_template">कहानी का खाका</string>
+    <string name="nav_support">समर्थन</string>
+    <string name="nav_terms_condition">नियम व शर्तें</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="no_bookmarks">कोई बुकमार्क नहीं!</string>
+    <string name="no_data">कोई आकड़ा उपलब्ध नहीं है!</string>
+    <string name="no_internet_msg">इंटरनेट नहीं है!</string>
+    <string name="no_notification">कोई सूचनाएं नहीं!</string>
+    <string msgid="478774118347071097" name="not_set">"सेट नहीं है"</string>
+    <string name="ok">ठीक</string>
+    <string name="or">या</string>
+    <string name="permission_not_granted">अनुमति नहीं दी गई!</string>
+    <string name="please_sign_in">कृपया के साथ साइन इन करें</string>
+    <string name="posts">पोस्ट</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_app_version_title">एप्लिकेशन वेरीज़न</string>
+    <string name="pref_font_title">प्रस्थान करें</string>
+    <string name="pref_language_dialog_title">बोली</string>
+    <string name="pref_language_summary">अंग्रेज़ी</string>
+    <string name="pref_language_title">बोली</string>
+    <string name="pref_logout_summary">मुझे यहाँ से प्रस्थान करो</string>
+    <string name="pref_notification_summary">अधिसूचना को चालू / बंद करें</string>
+    <string name="pref_notification_title">अधिसूचना</string>
+    <string name="pref_rtl_summary">सक्षम करें / बाएँ UI पर अक्षम करें</string>
+    <string name="pref_rtl_title">राइट टू लेफ्ट यूआई</string>
+    <string name="pref_text_size">टेक्स्ट का आकार चुनें</string>
+    <string name="pref_text_title">शब्दों का आकर</string>
+    <string name="pref_theme_size">चुनिंदा विषय</string>
+    <string name="pref_theme_title">विषय</string>
+    <string msgid="7961817945132860002" name="preference_copied">"\"<ns1:g id="SUMMARY">%1$s</ns1:g>\" क्लिपबोर्ड पर कॉपी किया गया."</string>
+    <string name="related_posts">संबंधित पोस्ट</string>
+    <string msgid="368094699078615544" name="s1">"इमेज सेव करें"</string>
+    <string msgid="4550830452390689489" name="s2">"विज्ञापन को तस्वीर गैलरी में इमेज सेव करने का अनुमति देना चाहते हैं?"</string>
+    <string msgid="2435407834265420668" name="s3">"मंज़ूरी दें"</string>
+    <string msgid="9167523597401839819" name="s4">"खारिज करें"</string>
+    <string msgid="1566682516266724847" name="s5">"कैलेंडर इवेंट बनाएं"</string>
+    <string msgid="5996672174517137271" name="s6">"विज्ञापन को कैलेंडर इवेंट बनाने दें?"</string>
+    <string msgid="7163549807207034258" name="s7">"जाँच विज्ञापन"</string>
+    <string name="saved">बचाया</string>
+    <string msgid="730395136688082741" name="search_menu_title">"खोजें"</string>
+    <string name="select_action">एक क्रिया का चयन करें</string>
+    <string name="server_failed_msg">सर्वर कनेक्शन विफल रहा</string>
+    <string name="share_text">से सर्वश्रेष्ठ समाचार एप्लिकेशन इंस्टॉल करें:</string>
+    <string name="sign_out">प्रस्थान करें</string>
+    <string name="skip_login">छोड़ें</string>
+    <string name="small_text">Small</string>
+    <string msgid="8106346172024741305" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit">प्रस्तुत</string>
+    <string msgid="5190123168583152844" name="summary_collapsed_preference_list">"<ns1:g id="CURRENT_ITEMS">%1$s</ns1:g>, <ns1:g id="ADDED_ITEMS">%2$s</ns1:g>"</string>
+    <string name="text_placeholder">टेक्स्ट</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_light">Light</string>
+    <string name="toolbar_address">पता</string>
+    <string name="toolbar_bookmarks">बुकमार्क</string>
+    <string name="toolbar_categories">श्रेणियाँ</string>
+    <string name="toolbar_comments">टिप्पणियाँ</string>
+    <string name="toolbar_filter">फ़िल्टर</string>
+    <string name="toolbar_notification">सूचनाएं</string>
+    <string name="toolbar_notification_detail">अधिसूचना विस्तार से</string>
+    <string name="toolbar_search">सर्च करने के लिए कुछ टाइप करें</string>
+    <string name="toolbar_settings">समायोजन</string>
+    <string msgid="5138405918326871307" name="v7_preference_off">"बंद"</string>
+    <string msgid="27351710992731591" name="v7_preference_on">"चालू"</string>
+    <string name="view_comments">टिप्पणियाँ देखें</string>
+    <string name="view_detail">विस्तार से देखें</string>
+    <string name="visit_url">URL पर जाएं</string>
+    <string name="write_a_comment">टिप्पणी लिखें</string>
+</resources>

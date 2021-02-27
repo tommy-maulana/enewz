@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "943801887165",
+    "firebase_url": "https://bestweby-product.firebaseio.com",
+    "project_id": "bestweby-product",
+    "storage_bucket": "bestweby-product.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943801887165:android:8ddc7a4f76ed8f13",
+        "android_client_info": {
+          "package_name": "com.bestweby.enewz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943801887165-vkg2mbtonqnk90ma1umpfr8ktmm1t1cd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bestweby.enewz",
+            "certificate_hash": "f0050f5ffea8be64eb04e2452fe858cba3cd729c"
+          }
+        },
+        {
+          "client_id": "943801887165-thvhndh1c2g707gehfba7r3ekl5e27dt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bestweby.enewz",
+            "certificate_hash": "91d212ba20cee90da799b14b86c4fef59d96cd96"
+          }
+        },
+        {
+          "client_id": "943801887165-s4hhsfl2vmjlsjl1v34vq50gbu8ngv4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIKJIylAq2ElznIDSSaTZNYt7SBAOxgyg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943801887165-s4hhsfl2vmjlsjl1v34vq50gbu8ngv4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_bottom_sheet"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="@dimen/size_0dp"
+        app:elevation="@dimen/size_5dp"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/select_action"
+            android:textSize="@dimen/text_16sp"
+            android:paddingTop="@dimen/size_5dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_10dp"
+            android:paddingBottom="@dimen/size_10dp"
+            android:textColor="@color/shimmerDark" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:background="@color/shimmerLight"/>
+
+        <LinearLayout
+            android:id="@+id/view_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_12dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_file_128"
+                android:tint="@color/shimmer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:text="@string/view_detail"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/shimmerDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mark_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_12dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_seen_128"
+                android:tint="@color/shimmer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:text="@string/mark_read"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/shimmerDark"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_12dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_delete_cane"
+                android:tint="@color/shimmer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:text="@string/delete"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/shimmerDark" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/close_window"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:padding="@dimen/size_12dp">
+
+            <ImageView
+                android:layout_width="@dimen/size_20dp"
+                android:layout_height="@dimen/size_20dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_clear_64"
+                android:tint="@color/shimmer"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/size_20dp"
+                android:text="@string/close"
+                android:textSize="@dimen/text_16sp"
+                android:textColor="@color/shimmerDark" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

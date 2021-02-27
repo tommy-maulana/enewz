@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    <com.bestweby.enewz.customview.RobotoTextView
+        android:id="@+id/spinner_text_item"
+        style="?android:attr/spinnerItemStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_10dp"
+        android:textColor="@color/colorPrimary2"  android:tag="layout/spinner_item_layout_0" xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+         

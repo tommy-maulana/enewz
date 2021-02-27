@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedscroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" android:tag="layout/blog_post_list_fragment_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteLight" android:tag="binding_1">
+
+            <include
+                android:id="@+id/blog_shimmerView"
+                layout="@layout/shimmer_blog_post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/primary_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/size_35dp"
+                    android:layout_height="@dimen/size_35dp"
+                    android:layout_below="@+id/primary_recycler"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/empty_list_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+         

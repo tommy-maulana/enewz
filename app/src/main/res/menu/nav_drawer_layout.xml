@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_news_template"
+            android:icon="@drawable/ic_news_128"
+            android:title="@string/nav_news_template" />
+
+        <item
+            android:id="@+id/nav_blog_template"
+            android:icon="@drawable/ic_blog_128"
+            android:title="@string/nav_blog_template" />
+
+        <item
+            android:id="@+id/nav_article_template"
+            android:icon="@drawable/ic_article_128"
+            android:title="@string/nav_article_template" />
+
+        <item
+            android:id="@+id/nav_story_template"
+            android:icon="@drawable/ic_story_128"
+            android:title="@string/nav_story_template" />
+
+        <item
+            android:id="@+id/nav_feed_template"
+            android:icon="@drawable/ic_feed_128"
+            android:title="@string/nav_feed_template" />
+
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_menu_128"
+            android:title="@string/nav_categories" />
+
+        <item
+            android:id="@+id/nav_bookmarks"
+            android:icon="@drawable/ic_bookmark_marked_128"
+            android:title="@string/nav_bookmarks" />
+
+    </group>
+
+    <item android:title="@string/nav_social">
+        <menu>
+            <item
+                android:id="@+id/nav_facebook"
+                android:icon="@drawable/ic_round_facebook_128"
+                android:title="@string/nav_facebook" />
+
+            <item
+                android:id="@+id/nav_youtube"
+                android:icon="@drawable/ic_round_youtube_128"
+                android:title="@string/nav_youtube" />
+
+            <item
+                android:id="@+id/nav_twitter"
+                android:icon="@drawable/ic_round_twitter_128"
+                android:title="@string/nav_twitter" />
+
+            <item
+                android:id="@+id/nav_instagram"
+                android:icon="@drawable/ic_instagram_128"
+                android:title="@string/nav_instagram" />
+
+            <item
+                android:id="@+id/nav_pinterest"
+                android:icon="@drawable/ic_pinterest_128"
+                android:title="@string/nav_pinterest" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_others">
+        <menu>
+
+            <item
+                android:id="@+id/nav_app_settings"
+                android:icon="@drawable/ic_settings_128"
+                android:title="@string/nav_settings" />
+
+            <item
+                android:id="@+id/nav_terms_condition"
+                android:icon="@drawable/ic_terms_128"
+                android:title="@string/nav_terms_condition" />
+
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy_128"
+                android:title="@string/nav_privacy_policy" />
+
+            <item
+                android:id="@+id/nav_faq"
+                android:icon="@drawable/ic_faq_128"
+                android:title="@string/nav_faq" />
+
+            <item
+                android:id="@+id/nav_rate_app"
+                android:icon="@drawable/ic_rate_app_128"
+                android:title="@string/nav_rate_app" />
+
+            <item
+                android:id="@+id/nav_more_apps"
+                android:icon="@drawable/ic_playstore_128"
+                android:title="@string/nav_more_apps" />
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" android:tag="layout/view_article_template_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <RelativeLayout
+            android:id="@+id/slider_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_180dp"
+            android:background="@color/colorWhite" android:tag="binding_1">
+
+            <include
+                android:id="@+id/slider_shimmerView"
+                layout="@layout/shimmer_template_slider_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/slider_viewpager"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/size_10dp"
+                android:paddingEnd="@dimen/size_10dp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite" android:tag="binding_2">
+
+            <include
+                android:id="@+id/category_shimmerView"
+                android:layout_marginTop="@dimen/size_3dp"
+                layout="@layout/shimmer_template_category_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/category_card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/size_5dp"
+                android:paddingBottom="@dimen/size_5dp"
+                app:cardBackgroundColor="@color/colorWhite"
+                app:cardCornerRadius="@dimen/size_0dp"
+                app:cardElevation="@dimen/size_3dp"
+                android:visibility="gone"
+                app:cardUseCompatPadding="false">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/category_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhiteLight" android:tag="binding_3">
+
+            <include
+                android:id="@+id/article_shimmerView"
+                layout="@layout/shimmer_article_post_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/primary_recycler"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="@dimen/size_35dp"
+                    android:layout_height="@dimen/size_35dp"
+                    android:layout_below="@+id/primary_recycler"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminate="true"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/empty_list_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+         

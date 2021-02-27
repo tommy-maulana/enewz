@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_post_comments_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:tag="binding_1">
+
+            <include
+                android:id="@+id/primary_toolbar"
+                layout="@layout/toolbar_main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize" />
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedscroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhiteLight" android:tag="binding_2">
+
+                    <include
+                        android:id="@+id/comment_shimmerView"
+                        layout="@layout/shimmer_post_comment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/primary_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_1dp"
+                        android:visibility="gone" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="@dimen/size_35dp"
+                        android:layout_height="@dimen/size_35dp"
+                        android:layout_below="@+id/primary_recycler"
+                        android:layout_centerHorizontal="true"
+                        android:indeterminate="true"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/empty_list_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_write_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/size_16dp"
+            android:src="@drawable/ic_chat_bubble_128"
+            app:fabCustomSize="@dimen/size_56dp"
+            android:tint="@android:color/white"
+            android:visibility="gone" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+         

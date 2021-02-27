@@ -1,0 +1,146 @@
+<resources>
+
+    <string name="app_name">ENEWZ</string>   <!--Replace with your app name -->
+    <string name="app_moto">Новости приложение для Wordpress сайта</string>
+
+
+    <!-- Navigation View Menu String -->
+    <string name="nav_news_template">Шаблон новостей</string>
+    <string name="nav_blog_template">Шаблон блога</string>
+    <string name="nav_article_template">Шаблон статьи</string>
+    <string name="nav_story_template">Шаблон истории</string>
+    <string name="nav_feed_template">Шаблон канала</string>
+    <string name="nav_categories">категории</string>
+    <string name="nav_category">категории</string>
+    <string name="nav_bookmarks">закладки</string>
+    <string name="nav_terms_condition">Сроки и условия</string>
+    <string name="nav_privacy_policy">политика конфиденциальности</string>
+    <string name="nav_faq">Вопросы-Ответы</string>
+    <string name="nav_support">Служба поддержки</string>
+    <string name="nav_social">Социальное</string>
+    <string name="nav_facebook">Facebook</string>
+    <string name="nav_youtube">Youtube</string>
+    <string name="nav_twitter">Twitter</string>
+    <string name="nav_instagram">Instagram</string>
+    <string name="nav_pinterest">Pinterest</string>
+    <string name="nav_others">другие</string>
+    <string name="nav_rate_app">Оценить приложение</string>
+    <string name="nav_settings">настройки</string>
+    <string name="nav_more_apps">Больше приложений</string>
+
+
+    <!-- Toolbar Title String -->
+    <string name="toolbar_address">Адрес</string>
+    <string name="toolbar_categories">категории</string>
+    <string name="toolbar_comments">Комментарии</string>
+    <string name="toolbar_bookmarks">закладки</string>
+    <string name="toolbar_notification">Уведомления</string>
+    <string name="toolbar_notification_detail">Деталь уведомления</string>
+    <string name="toolbar_settings">настройки</string>
+
+
+    <!-- Toolbar Menu String -->
+    <string name="toolbar_search">Введите что-то для поиска</string>
+    <string name="toolbar_filter">Фильтр</string>
+
+
+    <!-- Item Menu String -->
+    <string name="menu_share">доля</string>
+    <string name="menu_save">Сохранить</string>
+
+
+    <!--Toast, Snackbar message String -->
+    <string name="failed_msg">Не удалось</string>
+    <string name="comment_success_msg">Комментарий Успех</string>
+    <string name="no_internet_msg">Без интернета!</string>
+    <string name="connect_msg">соединять</string>
+    <string name="server_failed_msg">Ошибка подключения к серверу</string>
+    <string name="no_data">Нет данных!</string>
+    <string name="no_bookmarks">Нет закладок!</string>
+    <string name="no_notification">Нет уведомлений!</string>
+    <string name="login_msg">Пожалуйста, войдите сначала</string>
+    <string name="logout_success">Вышли из</string>
+
+
+    <!-- App Settings -->
+    <string name="pref_notification_title">уведомление</string>
+    <string name="pref_notification_summary">Включить / выключить уведомление</string>
+    <string name="pref_text_title">Размер текста</string>
+    <string name="pref_text_size">Выберите размер текста</string>
+    <string name="pref_theme_title">тема</string>
+    <string name="pref_theme_size">Выберите тему</string>
+    <string name="pref_language_dialog_title">Языки</string>
+    <string name="pref_language_title">язык</string>
+    <string name="pref_language_summary">английский</string>
+    <string name="pref_rtl_title">Интерфейс справа налево</string>
+    <string name="pref_rtl_summary">Включить / выключить интерфейс справа налево</string>
+    <string name="pref_app_version_title">Версия приложения</string>
+    <string name="pref_app_version_summary">v1.0</string>
+    <string name="pref_font_title">Выход</string>
+    <string name="pref_logout_summary">Выписать меня отсюда</string>
+
+    <!-- App Theme Settings -->
+    <string name="theme_light">Светлый</string>
+    <string name="theme_dark">Темно</string>
+
+    <!-- App Text Settings -->
+    <string name="small_text">Небольшой</string>
+    <string name="default_text">Обычный</string>
+    <string name="large_text">большой</string>
+
+    <!-- App Language Settings -->
+    <string name="language_arabic">арабский</string>
+    <string name="language_english">английский</string>
+    <string name="language_french">французкий язык</string>
+    <string name="language_german">Немецкий</string>
+    <string name="language_spanish">испанский</string>
+    <string name="language_indonesian">индонезийский</string>
+    <string name="language_italian">итальянский</string>
+    <string name="language_hindi">хинди</string>
+    <string name="language_turkish">турецкий</string>
+    <string name="language_russian">русский</string>
+
+
+    <string name="please_sign_in">Пожалуйста, войдите с</string>
+    <string name="facebook_cap">FACEBOOK</string>
+    <string name="sign_out">Выход</string>
+    <string name="google_cap">GOOGLE</string>
+    <string name="name">имя</string>
+    <string name="email">Электронное письмо</string>
+    <string name="email_cap">ЭЛЕКТРОННОЕ ПИСЬМО</string>
+    <string name="or">ИЛИ ЖЕ</string>
+    <string name="skip_login">ПРОПУСКАТЬ</string>
+
+
+    <string name="share_text">Установите лучшее новостное приложение от:</string>
+    <string name="install_messenger">Установить мессенджер facebook</string>
+    <string name="permission_not_granted">Разрешение не предоставлено!</string>
+
+
+    <string name="text_placeholder">Текст</string>
+    <string name="done">Готово</string>
+    <string name="ok">Хорошо</string>
+    <string name="login">Авторизоваться</string>
+    <string name="cancel">Отмена</string>
+    <string name="submit">представить</string>
+    <string name="posts">Сообщений</string>
+    <string name="default_comments">0 Комментарии</string>
+    <string name="comment">Комментарий</string>
+    <string name="comments">Комментарии</string>
+    <string name="already_saved">Уже сохранен</string>
+    <string name="saved">Сохраненный</string>
+    <string name="view_detail">Посмотреть детали</string>
+    <string name="detail">подробность</string>
+    <string name="mark_read">Пометить, как прочитанное</string>
+    <string name="delete">удалять</string>
+    <string name="close">близко</string>
+    <string name="visit_url">Посетить URL</string>
+    <string name="related_posts">Похожие сообщения</string>
+    <string name="view_comments">Просмотреть комментарии</string>
+    <string name="full_name_empty_msg">Введите полное имя</string>
+    <string name="email_address_empty_msg">Введите адрес электронной почты</string>
+    <string name="comment_content_empty_msg">Напишите что-нибудь, чтобы прокомментировать</string>
+    <string name="write_a_comment">Написать комментарий</string>
+    <string name="select_action">Выберите действие</string>
+
+</resources>

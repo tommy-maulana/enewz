@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" android:tag="layout/dialog_post_comment_layout_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <com.bestweby.enewz.customview.RobotoTextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10dp"
+            android:background="@color/colorAccent"
+            android:padding="@dimen/size_15dp"
+            android:text="@string/write_a_comment"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_18sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/author_name_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:layout_marginEnd="@dimen/size_15dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:padding="@dimen/size_12dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/author_name_icon"
+                        android:layout_width="@dimen/size_22dp"
+                        android:layout_height="@dimen/size_22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_user_128"
+                        android:tint="@color/colorBlackLight" />
+
+                    <EditText
+                        android:id="@+id/author_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_15dp"
+                        android:layout_toEndOf="@+id/author_name_icon"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/name"
+                        android:imeOptions="actionNext"
+                        android:inputType="text|textPersonName"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlackSemiTransparent"
+                        android:textSize="@dimen/text_16sp"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@style/TextInputErrorAppearance" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/author_email_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:layout_marginEnd="@dimen/size_15dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:padding="@dimen/size_12dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/author_email_icon"
+                        android:layout_width="@dimen/size_22dp"
+                        android:layout_height="@dimen/size_22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_email_128"
+                        android:tint="@color/colorBlackLight" />
+
+                    <EditText
+                        android:id="@+id/author_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_15dp"
+                        android:layout_toEndOf="@+id/author_email_icon"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/email"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlackSemiTransparent"
+                        android:textSize="@dimen/text_16sp"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@style/TextInputErrorAppearance" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/comment_content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/size_15dp"
+                    android:layout_marginEnd="@dimen/size_15dp"
+                    android:layout_marginBottom="@dimen/size_10dp"
+                    android:background="@drawable/bg_input_field"
+                    android:padding="@dimen/size_12dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/comment_content_icon"
+                        android:layout_width="@dimen/size_22dp"
+                        android:layout_height="@dimen/size_22dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_chat_128"
+                        android:tint="@color/colorBlackLight" />
+
+                    <EditText
+                        android:id="@+id/comment_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/size_15dp"
+                        android:layout_toEndOf="@+id/comment_content_icon"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/comment"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textColor="@color/colorBlack"
+                        android:textColorHint="@color/colorBlackSemiTransparent"
+                        android:textSize="@dimen/text_16sp"
+                        app:errorEnabled="true"
+                        app:errorTextAppearance="@style/TextInputErrorAppearance" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_marginBottom="@dimen/size_5dp"
+                    android:orientation="horizontal">
+
+                    <com.bestweby.enewz.customview.RobotoTextView
+                        android:id="@+id/cancel_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/size_10dp"
+                        android:text="@string/cancel"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_14sp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                    <com.bestweby.enewz.customview.RobotoTextView
+                        android:id="@+id/submit_comment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="50"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:focusable="true"
+                        android:gravity="center"
+                        android:padding="@dimen/size_10dp"
+                        android:text="@string/submit"
+                        android:textAllCaps="true"
+                        android:textSize="@dimen/text_14sp"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+         

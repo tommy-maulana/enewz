@@ -1,0 +1,679 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.bestweby.enewz"
+4    android:versionCode="9"
+5    android:versionName="1.5" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml
+10
+11    <!-- network permissions -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:7:5-67
+12-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:8:5-76
+13-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:8:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:9:5-79
+14-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.VIBRATE" />
+15-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:10:5-66
+15-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:10:22-63
+16
+17    <!-- SD card write permission -->
+18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+18-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:13:5-80
+18-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:13:22-77
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:14:5-81
+19-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:14:22-78
+20
+21    <!-- Create a unique permission for your app and use it so only your app can receive your OneSignal messages. -->
+22    <permission
+22-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:7:5-9:47
+23        android:name="com.bestweby.enewz.permission.C2D_MESSAGE"
+23-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:8:9-63
+24        android:protectionLevel="signature" />
+24-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:9:9-44
+25
+26    <uses-permission android:name="com.bestweby.enewz.permission.C2D_MESSAGE" />
+26-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:11:5-79
+26-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:11:22-76
+27    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- Required, makes sure notifications are delivered on time. -->
+27-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:17:5-82
+27-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:17:22-79
+28    <uses-permission android:name="android.permission.WAKE_LOCK" />
+28-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:18:5-68
+28-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:18:22-65
+29    <!--
+30 Use to restore notifications the user hasn't interacted with.
+31         They could be missed notifications if the user reboots their device if this isn't in place.
+32    -->
+33    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- START: ShortcutBadger -->
+33-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:29:5-81
+33-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:29:22-78
+34    <!-- Samsung -->
+35    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+35-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:31:5-86
+35-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:31:22-83
+36    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- HTC -->
+36-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:32:5-87
+36-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:32:22-84
+37    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+37-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:33:5-81
+37-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:33:22-78
+38    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- Sony -->
+38-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:34:5-83
+38-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:34:22-80
+39    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+39-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:35:5-88
+39-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:35:22-85
+40    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE" /> <!-- Apex -->
+40-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:36:5-92
+40-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:36:22-89
+41    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- Solid -->
+41-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:37:5-84
+41-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:37:22-81
+42    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" /> <!-- Huawei -->
+42-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:38:5-83
+42-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:38:22-80
+43    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE" />
+43-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:39:5-91
+43-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:39:22-88
+44    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS" />
+44-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:40:5-92
+44-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:40:22-89
+45    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS" /> <!-- ZUK -->
+45-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:41:5-93
+45-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:41:22-90
+46    <uses-permission android:name="android.permission.READ_APP_BADGE" /> <!-- OPPO -->
+46-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:42:5-73
+46-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:42:22-70
+47    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS" />
+47-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:43:5-82
+47-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:43:22-79
+48    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS" /> <!-- EvMe -->
+48-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:44:5-83
+48-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:44:22-80
+49    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ" />
+49-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:45:5-88
+49-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:45:22-85
+50    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE" />
+50-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:46:5-89
+50-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:46:22-86
+51    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+51-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:5-110
+51-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:26:22-107
+52
+53    <application
+53-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:17:5-159:19
+54        android:name="com.bestweby.enewz.app.BaseApplication"
+54-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:18:9-44
+55        android:allowBackup="false"
+55-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:19:9-36
+56        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+56-->[androidx.core:core:1.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/910e24fc762c7909e0c7bff281e94de2/core-1.1.0/AndroidManifest.xml:24:18-86
+57        android:debuggable="true"
+58        android:fullBackupContent="true"
+58-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:20:9-41
+59        android:icon="@drawable/ic_launcher"
+59-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:21:9-45
+60        android:label="@string/app_name"
+60-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:22:9-41
+61        android:largeHeap="true"
+61-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:23:9-33
+62        android:networkSecurityConfig="@xml/network_security_config"
+62-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:24:9-69
+63        android:supportsRtl="true"
+63-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:25:9-35
+64        android:testOnly="true"
+65        android:theme="@style/AppTheme" >
+65-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:26:9-40
+66        <activity
+66-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:30:9-51:20
+67            android:name="com.bestweby.enewz.activity.SplashActivity"
+67-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:31:13-52
+68            android:launchMode="singleTask"
+68-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:33:13-44
+69            android:screenOrientation="portrait"
+69-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:32:13-49
+70            android:theme="@style/AppTheme" >
+70-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:34:13-44
+71            <intent-filter>
+71-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:36:13-39:29
+72                <action android:name="android.intent.action.MAIN" />
+72-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:37:17-69
+72-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:37:25-66
+73
+74                <category android:name="android.intent.category.LAUNCHER" />
+74-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:38:17-77
+74-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:38:27-74
+75            </intent-filter>
+76            <intent-filter android:autoVerify="true" >
+76-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:41:13-49:29
+76-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:41:28-53
+77                <action android:name="android.intent.action.VIEW" />
+77-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:42:17-69
+77-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:42:25-66
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:43:17-76
+79-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:43:27-73
+80                <category android:name="android.intent.category.BROWSABLE" />
+80-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:44:17-78
+80-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:44:27-75
+81
+82                <data
+82-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:17-142
+83                    android:host="play.google.com"
+83-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:46-76
+84                    android:pathPrefix="/store/apps/details?id=com.bestweby.enewz"
+84-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:77-139
+85                    android:scheme="https" />
+85-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:23-45
+86                <data
+86-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:17-142
+87                    android:host="@string/website_domain"
+87-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:46-76
+88                    android:pathPrefix="/"
+88-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:77-139
+89                    android:scheme="http" />
+89-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:23-45
+90                <data
+90-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:17-142
+91                    android:host="@string/website_domain"
+91-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:46-76
+92                    android:pathPrefix="/"
+92-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:77-139
+93                    android:scheme="https" />
+93-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:46:23-45
+94            </intent-filter>
+95        </activity>
+96        <activity
+96-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:53:9-56:59
+97            android:name="com.bestweby.enewz.activity.NewsTemplateActivity"
+97-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:54:13-58
+98            android:screenOrientation="portrait"
+98-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:55:13-49
+99            android:theme="@style/AppTheme.Transparent" />
+99-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:56:13-56
+100        <activity
+100-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:58:9-61:59
+101            android:name="com.bestweby.enewz.activity.BlogTemplateActivity"
+101-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:59:13-58
+102            android:screenOrientation="portrait"
+102-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:60:13-49
+103            android:theme="@style/AppTheme.Transparent" />
+103-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:61:13-56
+104        <activity
+104-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:63:9-66:59
+105            android:name="com.bestweby.enewz.activity.ArticleTemplateActivity"
+105-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:64:13-61
+106            android:screenOrientation="portrait"
+106-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:65:13-49
+107            android:theme="@style/AppTheme.Transparent" />
+107-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:66:13-56
+108        <activity
+108-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:68:9-71:59
+109            android:name="com.bestweby.enewz.activity.StoryTemplateActivity"
+109-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:69:13-59
+110            android:screenOrientation="portrait"
+110-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:70:13-49
+111            android:theme="@style/AppTheme.Transparent" />
+111-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:71:13-56
+112        <activity
+112-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:73:9-76:59
+113            android:name="com.bestweby.enewz.activity.FeedTemplateActivity"
+113-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:74:13-58
+114            android:screenOrientation="portrait"
+114-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:75:13-49
+115            android:theme="@style/AppTheme.Transparent" />
+115-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:76:13-56
+116        <activity
+116-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:78:9-82:59
+117            android:name="com.bestweby.enewz.activity.PostDetailActivity"
+117-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:79:13-56
+118            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+118-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:80:13-96
+119            android:screenOrientation="portrait"
+119-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:81:13-49
+120            android:theme="@style/DetailsActivityTheme" />
+120-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:82:13-56
+121        <activity
+121-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:84:9-87:47
+122            android:name="com.bestweby.enewz.activity.PostCommentsActivity"
+122-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:85:13-58
+123            android:screenOrientation="portrait"
+123-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:86:13-49
+124            android:theme="@style/AppTheme" />
+124-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:87:13-44
+125        <activity
+125-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:89:9-92:47
+126            android:name="com.bestweby.enewz.activity.CategoryActivity"
+126-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:90:13-54
+127            android:screenOrientation="portrait"
+127-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:91:13-49
+128            android:theme="@style/AppTheme" />
+128-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:92:13-44
+129        <activity
+129-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:94:9-97:47
+130            android:name="com.bestweby.enewz.activity.CategoryPostsActivity"
+130-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:95:13-59
+131            android:screenOrientation="portrait"
+131-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:96:13-49
+132            android:theme="@style/AppTheme" />
+132-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:97:13-44
+133        <activity
+133-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:99:9-102:47
+134            android:name="com.bestweby.enewz.activity.SubCategoryActivity"
+134-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:100:13-57
+135            android:screenOrientation="portrait"
+135-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:101:13-49
+136            android:theme="@style/AppTheme" />
+136-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:102:13-44
+137        <activity
+137-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:104:9-107:47
+138            android:name="com.bestweby.enewz.activity.SearchPostActivity"
+138-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:105:13-56
+139            android:screenOrientation="portrait"
+139-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:106:13-49
+140            android:theme="@style/AppTheme" />
+140-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:107:13-44
+141        <activity
+141-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:109:9-112:47
+142            android:name="com.bestweby.enewz.activity.MyFavouritesActivity"
+142-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:110:13-58
+143            android:screenOrientation="portrait"
+143-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:111:13-49
+144            android:theme="@style/AppTheme" />
+144-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:112:13-44
+145        <activity
+145-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:114:9-117:47
+146            android:name="com.bestweby.enewz.activity.NotificationActivity"
+146-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:115:13-58
+147            android:screenOrientation="portrait"
+147-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:116:13-49
+148            android:theme="@style/AppTheme" />
+148-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:117:13-44
+149        <activity
+149-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:119:9-122:47
+150            android:name="com.bestweby.enewz.activity.NotificationDetailActivity"
+150-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:120:13-64
+151            android:screenOrientation="portrait"
+151-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:121:13-49
+152            android:theme="@style/AppTheme" />
+152-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:122:13-44
+153        <activity
+153-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:124:9-127:47
+154            android:name="com.bestweby.enewz.activity.AppSettingsActivity"
+154-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:125:13-57
+155            android:screenOrientation="portrait"
+155-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:126:13-49
+156            android:theme="@style/AppTheme" />
+156-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:127:13-44
+157        <activity
+157-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:129:9-132:47
+158            android:name="com.bestweby.enewz.activity.WebContentActivity"
+158-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:130:13-56
+159            android:screenOrientation="portrait"
+159-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:131:13-49
+160            android:theme="@style/AppTheme" />
+160-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:132:13-44
+161
+162        <service
+162-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:134:9-141:19
+163            android:name="com.bestweby.enewz.notification.NotificationRecieverService"
+163-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:135:13-69
+164            android:enabled="true"
+164-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:136:13-35
+165            android:exported="true" >
+165-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:137:13-36
+166            <intent-filter>
+166-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:138:13-140:29
+167                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+167-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:139:17-78
+167-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:139:25-75
+168            </intent-filter>
+169        </service>
+170
+171        <meta-data
+171-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:143:9-145:55
+172            android:name="com.facebook.sdk.ApplicationId"
+172-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:144:13-58
+173            android:value="@string/FACEBOOK_APP_ID" />
+173-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:145:13-52
+174        <meta-data
+174-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:147:9-149:52
+175            android:name="com.google.android.gms.ads.APPLICATION_ID"
+175-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:148:13-69
+176            android:value="@string/admob_app_id" />
+176-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:149:13-49
+177        <meta-data
+177-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:151:9-153:39
+178            android:name="com.onesignal.NotificationOpened.DEFAULT"
+178-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:152:13-68
+179            android:value="DISABLE" />
+179-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:153:13-36
+180        <meta-data
+180-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:155:9-157:72
+181            android:name="io.fabric.ApiKey"
+181-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:156:13-44
+182            android:value="007092301d0b329669a3d8bbb6449bf9ee940879" />
+182-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:157:13-69
+183        <meta-data
+183-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:49:9-51:51
+184            android:name="onesignal_app_id"
+184-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:50:13-44
+185            android:value="bbda03de-c9a9-4577-866b-b09a3a8cc43d" /> <!-- Deprecated - Pulled from OneSignal dashboard. -->
+185-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:51:13-48
+186        <meta-data
+186-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:53:9-55:70
+187            android:name="onesignal_google_project_number"
+187-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:54:13-59
+188            android:value="str:REMOTE" />
+188-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:55:13-67
+189
+190        <receiver
+190-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:57:9-67:20
+191            android:name="com.onesignal.GcmBroadcastReceiver"
+191-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:58:13-62
+192            android:permission="com.google.android.c2dm.permission.SEND" >
+192-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:59:13-73
+193
+194            <!-- High priority so OneSignal payloads can be filtered from other GCM receivers if filterOtherGCMReceivers is enabled. -->
+195            <intent-filter android:priority="999" >
+195-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:62:13-66:29
+195-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:62:28-50
+196                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+196-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:63:17-81
+196-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:63:25-78
+197
+198                <category android:name="com.bestweby.enewz" />
+198-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:65:17-61
+198-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:65:27-58
+199            </intent-filter>
+200        </receiver>
+201        <receiver android:name="com.onesignal.NotificationOpenedReceiver" />
+201-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:68:9-77
+201-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:68:19-74
+202
+203        <service android:name="com.onesignal.GcmIntentService" />
+203-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:70:9-66
+203-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:70:18-63
+204        <service
+204-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:71:9-73:72
+205            android:name="com.onesignal.GcmIntentJobService"
+205-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:72:13-61
+206            android:permission="android.permission.BIND_JOB_SERVICE" />
+206-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:73:13-69
+207        <service
+207-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:74:9-76:72
+208            android:name="com.onesignal.RestoreJobService"
+208-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:75:13-59
+209            android:permission="android.permission.BIND_JOB_SERVICE" />
+209-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:76:13-69
+210        <service
+210-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:77:9-79:72
+211            android:name="com.onesignal.RestoreKickoffJobService"
+211-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:78:13-66
+212            android:permission="android.permission.BIND_JOB_SERVICE" />
+212-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:79:13-69
+213        <service
+213-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:80:9-82:43
+214            android:name="com.onesignal.SyncService"
+214-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:81:13-53
+215            android:stopWithTask="true" />
+215-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:82:13-40
+216        <service
+216-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:83:9-85:72
+217            android:name="com.onesignal.SyncJobService"
+217-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:84:13-56
+218            android:permission="android.permission.BIND_JOB_SERVICE" />
+218-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:85:13-69
+219
+220        <activity
+220-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:87:9-89:75
+221            android:name="com.onesignal.PermissionsActivity"
+221-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:88:13-61
+222            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+222-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:89:13-72
+223
+224        <service android:name="com.onesignal.NotificationRestoreService" />
+224-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:91:9-76
+224-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:91:18-73
+225
+226        <receiver android:name="com.onesignal.BootUpReceiver" >
+226-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:93:9-98:20
+226-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:93:19-62
+227            <intent-filter>
+227-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:94:13-97:29
+228                <action android:name="android.intent.action.BOOT_COMPLETED" />
+228-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:95:17-79
+228-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:95:25-76
+229                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+229-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:96:17-82
+229-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:96:25-79
+230            </intent-filter>
+231        </receiver>
+232        <receiver android:name="com.onesignal.UpgradeReceiver" >
+232-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:99:9-103:20
+232-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:99:19-63
+233            <intent-filter>
+233-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:100:13-102:29
+234                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+234-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:101:17-84
+234-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:101:25-81
+235            </intent-filter>
+236        </receiver>
+237
+238        <provider
+238-->[com.squareup.picasso:picasso:2.71828] /Users/tmy/.gradle/caches/transforms-2/files-2.1/da0087e1a96a2ef69fa321ce7d19578d/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+239            android:name="com.squareup.picasso.PicassoProvider"
+239-->[com.squareup.picasso:picasso:2.71828] /Users/tmy/.gradle/caches/transforms-2/files-2.1/da0087e1a96a2ef69fa321ce7d19578d/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+240            android:authorities="com.bestweby.enewz.com.squareup.picasso"
+240-->[com.squareup.picasso:picasso:2.71828] /Users/tmy/.gradle/caches/transforms-2/files-2.1/da0087e1a96a2ef69fa321ce7d19578d/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+241            android:exported="false" />
+241-->[com.squareup.picasso:picasso:2.71828] /Users/tmy/.gradle/caches/transforms-2/files-2.1/da0087e1a96a2ef69fa321ce7d19578d/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+242        <!--
+243             FirebaseMessagingService performs security checks at runtime,
+244             but set to not exported to explicitly avoid allowing another app to call it.
+245        -->
+246        <service
+246-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:28:9-34:19
+247            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+247-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:29:13-82
+248            android:exported="false" >
+248-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:30:13-37
+249            <intent-filter android:priority="-500" >
+249-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:138:13-140:29
+250                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+250-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:139:17-78
+250-->/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/AndroidManifest.xml:139:25-75
+251            </intent-filter>
+252        </service>
+253        <service
+253-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:35:9-41:19
+254            android:name="com.google.firebase.components.ComponentDiscoveryService"
+254-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:36:13-84
+255            android:directBootAware="true"
+255-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+256            android:exported="false" >
+256-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:37:13-37
+257            <meta-data
+257-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:38:13-40:85
+258                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+258-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:39:17-119
+259                android:value="com.google.firebase.components.ComponentRegistrar" />
+259-->[com.google.firebase:firebase-messaging:20.1.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b076dba8e529e512bb769c1e8efdbff8/jetified-firebase-messaging-20.1.0/AndroidManifest.xml:40:17-82
+260            <meta-data
+260-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/3df16c329eb72525b235a791e531d7a8/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:28:13-30:85
+261                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+261-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/3df16c329eb72525b235a791e531d7a8/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:29:17-115
+262                android:value="com.google.firebase.components.ComponentRegistrar" />
+262-->[com.google.firebase:firebase-datatransport:17.0.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/3df16c329eb72525b235a791e531d7a8/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml:30:17-82
+263            <meta-data
+263-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/d9d1a20d78a77fb6c3b5e06a8223b0e3/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+264                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+264-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/d9d1a20d78a77fb6c3b5e06a8223b0e3/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+265                android:value="com.google.firebase.components.ComponentRegistrar" />
+265-->[com.google.android.gms:play-services-measurement-api:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/d9d1a20d78a77fb6c3b5e06a8223b0e3/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+266            <meta-data
+266-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+267                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+267-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+268                android:value="com.google.firebase.components.ComponentRegistrar" />
+268-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+269        </service>
+270        <service
+270-->[androidx.room:room-runtime:2.2.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b0472248aa2f1ba3ff1bbd4074e895df/room-runtime-2.2.3/AndroidManifest.xml:25:9-27:40
+271            android:name="androidx.room.MultiInstanceInvalidationService"
+271-->[androidx.room:room-runtime:2.2.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b0472248aa2f1ba3ff1bbd4074e895df/room-runtime-2.2.3/AndroidManifest.xml:26:13-74
+272            android:exported="false" />
+272-->[androidx.room:room-runtime:2.2.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/b0472248aa2f1ba3ff1bbd4074e895df/room-runtime-2.2.3/AndroidManifest.xml:27:13-37
+273
+274        <receiver
+274-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+275            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+275-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+276            android:exported="true"
+276-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+277            android:permission="com.google.android.c2dm.permission.SEND" >
+277-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+278            <intent-filter>
+278-->[com.google.firebase:firebase-iid:20.0.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/0f53ef0139923be6dd075c0c46b1eae3/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+279                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+279-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:63:17-81
+279-->[com.onesignal:OneSignal:3.12.3] /Users/tmy/.gradle/caches/transforms-2/files-2.1/45bff7e07d13f3a0d9c9fc21c359cf95/jetified-OneSignal-3.12.3/AndroidManifest.xml:63:25-78
+280            </intent-filter>
+281        </receiver>
+282
+283        <provider
+283-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+284            android:name="com.google.firebase.provider.FirebaseInitProvider"
+284-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+285            android:authorities="com.bestweby.enewz.firebaseinitprovider"
+285-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+286            android:exported="false"
+286-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+287            android:initOrder="100" />
+287-->[com.google.firebase:firebase-common:19.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/561224d95afb1c86e82bde3d66c2b645/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+288
+289        <activity
+289-->[com.google.android.gms:play-services-base:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/7c07e5a7fa6d974b3595f7f2f9a9eba1/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+290            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+290-->[com.google.android.gms:play-services-base:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/7c07e5a7fa6d974b3595f7f2f9a9eba1/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+291            android:exported="false"
+291-->[com.google.android.gms:play-services-base:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/7c07e5a7fa6d974b3595f7f2f9a9eba1/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+292            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+292-->[com.google.android.gms:play-services-base:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/7c07e5a7fa6d974b3595f7f2f9a9eba1/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+293
+294        <receiver
+294-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+295            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+295-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+296            android:enabled="true"
+296-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+297            android:exported="false" >
+297-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+298        </receiver>
+299        <receiver
+299-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+300            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+300-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
+301            android:enabled="true"
+301-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+302            android:exported="true"
+302-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+303            android:permission="android.permission.INSTALL_PACKAGES" >
+303-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+304            <intent-filter>
+304-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:39:13-41:29
+305                <action android:name="com.android.vending.INSTALL_REFERRER" />
+305-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:17-79
+305-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:40:25-76
+306            </intent-filter>
+307        </receiver>
+308
+309        <service
+309-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+310            android:name="com.google.android.gms.measurement.AppMeasurementService"
+310-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+311            android:enabled="true"
+311-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+312            android:exported="false" />
+312-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+313        <service
+313-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+314            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+314-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+315            android:enabled="true"
+315-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+316            android:exported="false"
+316-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+317            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+317-->[com.google.android.gms:play-services-measurement:17.2.2] /Users/tmy/.gradle/caches/transforms-2/files-2.1/111d572ff6ba3dd36abf2e9ed1bc0728/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+318        <activity
+318-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:29:9-33:64
+319            android:name="com.google.android.gms.ads.AdActivity"
+319-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:30:13-65
+320            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+320-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:31:13-122
+321            android:exported="false"
+321-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:32:13-37
+322            android:theme="@android:style/Theme.Translucent" />
+322-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:33:13-61
+323
+324        <provider
+324-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:35:9-39:39
+325            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+325-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:36:13-76
+326            android:authorities="com.bestweby.enewz.mobileadsinitprovider"
+326-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:37:13-73
+327            android:exported="false"
+327-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:38:13-37
+328            android:initOrder="100" />
+328-->[com.google.android.gms:play-services-ads-lite:18.3.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/bf26fbae01deec5a1e2e850d3f41a6a5/jetified-play-services-ads-lite-18.3.0/AndroidManifest.xml:39:13-36
+329
+330        <meta-data
+330-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/a52bfb92d2b276c79d11db281b8aa668/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+331            android:name="com.google.android.gms.version"
+331-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/a52bfb92d2b276c79d11db281b8aa668/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+332            android:value="@integer/google_play_services_version" />
+332-->[com.google.android.gms:play-services-basement:17.0.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/a52bfb92d2b276c79d11db281b8aa668/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+333
+334        <service
+334-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:29:9-35:19
+335            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+335-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:30:13-103
+336            android:exported="false" >
+336-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:31:13-37
+337            <meta-data
+337-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:32:13-34:39
+338                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+338-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:33:17-94
+339                android:value="cct" />
+339-->[com.google.android.datatransport:transport-backend-cct:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/80740ea671f9509e07d6a34e2b93f75c/jetified-transport-backend-cct-2.2.0/AndroidManifest.xml:34:17-36
+340        </service>
+341        <service
+341-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:26:9-30:19
+342            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+342-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:27:13-117
+343            android:exported="false"
+343-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:28:13-37
+344            android:permission="android.permission.BIND_JOB_SERVICE" >
+344-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:29:13-69
+345        </service>
+346
+347        <receiver
+347-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:32:9-34:40
+348            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+348-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:33:13-132
+349            android:exported="false" />
+349-->[com.google.android.datatransport:transport-runtime:2.2.0] /Users/tmy/.gradle/caches/transforms-2/files-2.1/65c9f7529c4981d43c925fa693badfa2/jetified-transport-runtime-2.2.0/AndroidManifest.xml:34:13-37
+350    </application>
+351
+352</manifest>

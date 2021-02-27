@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorWhite"
+        app:cardCornerRadius="@dimen/size_5dp"
+        app:cardElevation="0dp"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/slider_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@color/disabledGrey" />
+
+            <com.bestweby.enewz.customview.RobotoTextView
+                android:id="@+id/slider_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/bg_transparent_gradient"
+                android:maxLines="2"
+                android:textDirection="rtl"
+                android:gravity="bottom"
+                android:padding="@dimen/size_7dp"
+                android:text="@string/text_placeholder"
+                android:textSize="@dimen/text_14sp"
+                android:textColor="@android:color/white" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</layout>

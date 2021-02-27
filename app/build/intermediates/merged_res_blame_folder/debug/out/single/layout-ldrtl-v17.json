@@ -1,0 +1,70 @@
+[
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_related_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_related_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_comment_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_comment_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_article_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_article_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_story_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_story_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_feed_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_feed_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_favourite_post_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_favourite_post_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_notification_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_notification_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_category_linear_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_category_linear_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/search_toolbar_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/search_toolbar_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_category_grid_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_category_grid_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/toolbar_main_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/toolbar_main_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/dialog_post_comment_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/dialog_post_comment_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_news_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_news_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_image_slider.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_image_slider.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_blog_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_blog_post_list_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/details_toolbar_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/details_toolbar_layout.xml"
+    },
+    {
+        "merged": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout-ldrtl-v17/item_search_post_list_layout.xml",
+        "source": "/Users/tmy/Desktop/ENEWZ - News App for Wordpress Site/ENEWZ/app/src/main/res/layout-ldrtl/item_search_post_list_layout.xml"
+    }
+]
